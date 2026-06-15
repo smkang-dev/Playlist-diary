@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Playlist Diary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A music playlist web application built with React and the iTunes Search API.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+* Music search using the iTunes Search API
+* Display of album artwork, song titles, artists, and album information
+* 30-second song preview playback
+* Playlist creation and management
+* Add and remove songs from the playlist
+* Sequential preview playback for the entire playlist
+* Local storage persistence to retain playlists after page refresh
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React
+* JavaScript
+* CSS
+* iTunes Search API
+* LocalStorage
+* Git / GitHub
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+```text
+src
+├─ App.js
+├─ App.css
+├─ index.js
+├─ index.css
+├─ reportWebVitals.js
+└─ ...
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Core Functionalities
 
-### `npm run build`
+### Search
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Search songs by title, artist, or album name
+* Retrieve music data through the iTunes Search API
+* Display search results dynamically
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Playlist
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Add songs to a custom playlist
+* Prevent duplicate songs from being added
+* Remove individual songs
+* Clear the entire playlist
 
-### `npm run eject`
+### Playback
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+* Preview individual songs (30 seconds)
+* Sequential preview playback for all songs in the playlist
+* Stop currently playing previews
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Persistence
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Save playlists using LocalStorage
+* Automatically restore saved playlists on page reload
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Screenshots
 
-## Learn More
+* Playlist Page
+* Search Page
+* Music Search Results
+* Playlist with Preview Playback
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Future Improvements
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Shuffle playback mode
+* Playlist reordering with drag-and-drop
+* Responsive UI enhancements
+* Dark mode support
+* Playlist export/import functionality
