@@ -1,27 +1,61 @@
 # Playlist Diary
 
-A music playlist web application built with React and the iTunes Search API.
+React와 iTunes Search API를 활용하여 구현한 음악 플레이리스트 웹 애플리케이션입니다.
 
-## Features
+음악 검색, 플레이리스트 생성 및 관리, 30초 미리듣기, 전체 재생, LocalStorage를 이용한 플레이리스트 저장 기능을 구현했습니다.
 
-* Music search using the iTunes Search API
-* Display of album artwork, song titles, artists, and album information
-* 30-second song preview playback
-* Playlist creation and management
-* Add and remove songs from the playlist
-* Sequential preview playback for the entire playlist
-* Local storage persistence to retain playlists after page refresh
+---
 
-## Tech Stack
+## 주요 기능
 
-* React
-* JavaScript
-* CSS
-* iTunes Search API
-* LocalStorage
-* Git / GitHub
+- 음악 검색
+- 플레이리스트 생성 및 관리
+- 플레이리스트에 음악 추가 및 삭제
+- 30초 미리듣기
+- 플레이리스트 전체 순차 재생
+- LocalStorage를 이용한 플레이리스트 저장
 
-## Project Structure
+---
+
+## 핵심 구현 내용
+
+### 음악 검색
+
+- iTunes Search API를 이용한 음악 검색
+- 제목, 가수, 앨범명을 기준으로 검색
+- 검색 결과를 실시간으로 화면에 출력
+
+### 플레이리스트
+
+- 원하는 음악을 플레이리스트에 추가
+- 동일한 음악 중복 추가 방지
+- 개별 삭제 및 전체 초기화 기능 구현
+
+### 음악 재생
+
+- 개별 음악 30초 미리듣기
+- 플레이리스트 전체 순차 재생
+- 현재 재생 중인 음악 정지 기능 구현
+
+### 데이터 저장
+
+- LocalStorage를 이용한 플레이리스트 저장
+- 새로고침 후에도 플레이리스트 자동 복원
+
+---
+
+## 기술 스택
+
+- React
+- JavaScript
+- CSS
+- iTunes Search API
+- LocalStorage
+- Git / GitHub
+
+---
+
+## 프로젝트 구조
 
 ```text
 src
@@ -33,43 +67,30 @@ src
 └─ ...
 ```
 
-## Core Functionalities
+---
 
-### Search
+## 실행 화면
 
-* Search songs by title, artist, or album name
-* Retrieve music data through the iTunes Search API
-* Display search results dynamically
+- 플레이리스트 화면
+- 음악 검색 화면
+- 검색 결과
+- 플레이리스트 및 미리듣기
 
-### Playlist
+---
 
-* Add songs to a custom playlist
-* Prevent duplicate songs from being added
-* Remove individual songs
-* Clear the entire playlist
+## 프로젝트에서 배운 점
 
-### Playback
+- React의 컴포넌트 기반 개발 방식을 익혔습니다.
+- 외부 REST API를 활용하여 데이터를 조회하고 화면에 출력하는 방법을 학습했습니다.
+- LocalStorage를 이용한 클라이언트 데이터 저장 방식을 경험했습니다.
+- React의 상태(State) 관리와 이벤트 처리를 통해 사용자 인터랙션을 구현했습니다.
 
-* Preview individual songs (30 seconds)
-* Sequential preview playback for all songs in the playlist
-* Stop currently playing previews
+---
 
-### Persistence
+## 향후 개선 사항
 
-* Save playlists using LocalStorage
-* Automatically restore saved playlists on page reload
-
-## Screenshots
-
-* Playlist Page
-* Search Page
-* Music Search Results
-* Playlist with Preview Playback
-
-## Future Improvements
-
-* Shuffle playback mode
-* Playlist reordering with drag-and-drop
-* Responsive UI enhancements
-* Dark mode support
-* Playlist export/import functionality
+- 셔플 재생 기능
+- Drag & Drop을 이용한 플레이리스트 순서 변경
+- 반응형 UI 개선
+- 다크 모드 지원
+- 플레이리스트 내보내기 및 불러오기 기능
