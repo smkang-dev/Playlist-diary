@@ -79,7 +79,7 @@ src
 
 | 검색 결과 | 미리듣기 재생 |
 |------------|---------------|
-| ![](images/search-result.png) | ![](images/playback.png) |
+| ![](images/result.png) | ![](images/playback.png) |
 
 ---
 
