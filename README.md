@@ -75,11 +75,11 @@ src
 
 | 플레이리스트 | 음악 검색 |
 |--------------|-----------|
-| ![](images/playlist.png) | ![](images/search.png) |
+| ![](image/playlist.png) | ![](image/search.png) |
 
 | 검색 결과 | 미리듣기 재생 |
 |------------|---------------|
-| ![](images/result.png) | ![](images/playback.png) |
+| ![](image/result.png) | ![](image/playback.png) |
 
 ---
 
