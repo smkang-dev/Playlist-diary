@@ -65,7 +65,6 @@ src
 ├─ App.css
 ├─ index.js
 ├─ index.css
-├─ reportWebVitals.js
 └─ ...
 ```
 
@@ -75,18 +74,17 @@ src
 
 | 플레이리스트 | 음악 검색 |
 |--------------|-----------|
-| ![](image/playlist.png) | ![](image/search.png) |
+| ![](images/playlist.png) | ![](images/search.png) |
 
 | 검색 결과 | 미리듣기 재생 |
 |------------|---------------|
-| ![](image/result.png) | ![](image/playback.png) |
+| ![](images/search-result.png) | ![](images/playback.png) |
 
 ---
 
 ## 프로젝트에서 배운 점
 
-- React의 컴포넌트를 기반으로 검색 결과, 플레이리스트, 재생 컨트롤처럼 역할을 나눠 화면을 구성했습니다.
-- 외부 REST API를 활용하여 데이터를 조회하고 가공하여 화면에 원하는 형태로 출력했습니다.
+- 외부 REST API를 활용하여 데이터를 조회하고 화면에 출력하는 방법을 학습했습니다.
 - LocalStorage를 이용하여 새로고침 후에도 플레이리스트가 유지되도록 클라이언트 저장소를 활용했습니다.
 - React의 상태(State) 관리와 이벤트 처리를 통해 사용자 인터랙션을 구현했습니다.
 
