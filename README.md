@@ -78,7 +78,7 @@ src
 
 | 검색 결과 | 미리듣기 재생 |
 |------------|---------------|
-| ![](image/search-result.png) | ![](image/playback.png) |
+| ![](image/result.png) | ![](image/playback.png) |
 
 ---
 
